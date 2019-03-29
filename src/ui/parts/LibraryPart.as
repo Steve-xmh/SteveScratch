@@ -149,7 +149,7 @@ public class LibraryPart extends UIPart {
 	private function fixLayout():void {
 		var buttonY:int = 4;
 		
-		libraryButton.visible = false;//不需要
+		libraryButton.visible = false;
 		
 		if (!app.isMicroworld) {
 			libraryButton.x = ScratchObj.STAGEW - 100;//380

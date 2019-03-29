@@ -7,9 +7,9 @@ local offAdd = [[\src\util\]] -- 相对于 add 的源码 util 路径（存放bin
 local TargetPlatform = arg[6]
 
 local buildConfig = arg[5]
-local debugmod = false
+local debug = false
 if buildConfig == "debug" then
-    debugMod = true
+    debug = true
     print("You have choose debug building...")
 end
 
@@ -19,17 +19,18 @@ local libPath = [["]]..arg[4]..[[\libs\"]]
 local buildProject = [["]]..arg[4]..[[\src\Loader\SB2Loader.as"]]
 
 local configPath = [["]]..arg[4]..[[\obj\SteveScratchConfig.xml"]]
-local title = [[ -title="SteveScratch 1.0.12"]]
+local title = [[ -title="SteveScratch 1.0.8I"]]
 local compilerRun = [[\bin\mxmlc.bat]]
 os.execute("cls")
 print("\n\tBuilding SteveScratchLoader...\n")
 
-local buildFormat = [["%s%s" -load-config+=%s -incremental=true +configname=%s%s --compiler.compress=%s --debug=%s -use-network=%s -optimize=%s --static-link-runtime-shared-libraries=true -accessible=true -o %s]]
+local buildCmd = [["]]..
+    compiler .. compilerRun ..
+    [[" -load-config+=]] ..
+    configPath .. title ..
+    [[ -incremental=true +configname=]]..TargetPlatform..[[ --compiler.compress=false --debug=]] .. tostring(debug) .. [[ -use-network=false --static-link-runtime-shared-libraries=true -accessible=true -o ]] .. add
 
-local buildCmd = string.format(buildFormat,
-compiler,compilerRun,configPath,TargetPlatform,title,"false",debugMod,"false",not debugmod,add)
-
-print(buildCmd)
+--print(buildCmd)
 --mxmlc -load-config+=obj\SteveScratchConfig.xml -debug=true -incremental=true +configname=air --compiler.compress=false --static-link-runtime-shared-libraries=true -o obj\SteveScratch636793438897870910
 
 local f = io.open(arg[4] .. offAdd .. [[PartHeader.bin]], "wb")
@@ -165,8 +166,12 @@ f = io.open(string.sub(configPath, 2, -2), "wb")
 f:write(str)
 f:close()
 
-buildCmd = string.format(buildFormat,
-compiler,compilerRun,configPath,TargetPlatform,title,"true",debugMod,"false",not debugmod,add)
+buildCmd = [["]]..
+    compiler .. compilerRun ..
+    [[" -load-config+=]] ..
+    configPath .. title ..
+    [[ -incremental=true +configname=]]..TargetPlatform..[[ --compiler.compress=true --debug=]] .. tostring(debug) .. [[ -use-network=true --static-link-runtime-shared-libraries=true -o ]] .. add
+
 
 os.remove(add)
 os.remove(add .. ".cache")

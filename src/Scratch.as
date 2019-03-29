@@ -166,7 +166,7 @@ public class Scratch extends Sprite {
 	
 	// Version 版本号
 	public static const versionString:String = 'v461.1';
-	public static const ssVersionString:String = '1.0.11';//I为内测版本
+	public static const ssVersionString:String = '1.0.12';//I为内测版本
 	//trace(new uint(1010).toString(10));
 	
 	public static var app:Scratch; // static reference to the app, used for debugging // 主类的映射，其他类可以调用
@@ -394,7 +394,7 @@ public class Scratch extends Sprite {
 		info.addEventListener(IOErrorEvent.IO_ERROR, function(e:IOErrorEvent):void{
 			if (isManual) DialogBox.notify("Update check failed", "Could not retrieve version information from server.");
 		});
-		info.load(new URLRequest(encodeURI("https://www.clipteam.com/SteveScratch/versionInfo.json")));
+		info.load(new URLRequest(encodeURI("http://clip.sparrowhe.cf:1234/ssupd/versionInfo.json")));
 		trace("正在检查更新");
 	}
 	
@@ -432,7 +432,7 @@ public class Scratch extends Sprite {
 			DialogBox.notify("Update failed", "Could not retrieve new application from server.");
 			removeLoadProgressBox();
 		});
-		updatePack.load(new URLRequest(encodeURI("https://www.clipteam.com/SteveScratch/" + link)));
+		updatePack.load(new URLRequest(encodeURI("http://clip.sparrowhe.cf:1234/ssupd/" + link)));
 	}
 	
 	
