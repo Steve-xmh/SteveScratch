@@ -33,7 +33,7 @@
 	</define>
 	<define append="true">
       <name>SS::timeStamp</name>
-      <value>'2018 12/31/18 21:26:43'</value><!--TS-->
+      <value>'2019 03/29/19 23:42:33'</value><!--TS-->
     </define>
     <locale>
       <locale-element>zh_CN</locale-element>
@@ -41,17 +41,17 @@
     <omit-trace-statements>false</omit-trace-statements>
     <verbose-stacktraces>false</verbose-stacktraces>
     <source-path append="true">
-      <path-element>G:\ssDev\SteveScratch\src</path-element>
+      <path-element>L:\works\SteveScratch\src</path-element>
       <path-element>G:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
-      <path-element>G:\ssDev\SteveScratch\libs\grabcut.swc</path-element>
-      <path-element>G:\ssDev\SteveScratch\libs\as3corelib.swc</path-element>
-      <path-element>G:\ssDev\SteveScratch\libs\blooddy_crypto.swc</path-element>
+      <path-element>L:\works\SteveScratch\libs\grabcut.swc</path-element>
+      <path-element>L:\works\SteveScratch\libs\as3corelib.swc</path-element>
+      <path-element>L:\works\SteveScratch\libs\blooddy_crypto.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
-    <path-element>G:\ssDev\SteveScratch\src\Scratch.as</path-element>
+    <path-element>L:\works\SteveScratch\src\Scratch.as</path-element>
   </file-specs>
   <default-background-color>#ADAAA7</default-background-color>
   <default-frame-rate>30</default-frame-rate>

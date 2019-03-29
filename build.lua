@@ -2,7 +2,7 @@ if #arg ~= 6 then
     error("Please lauch me in FlashDevelop :D")
 end
 local compiler = arg[1] --Flex SDK 路径
-local add = [[G:\ssDev\SteveScratch\bin\SteveScratch.swf]] --生成的 swf 路径
+local add = [[L:\works\SteveScratch\bin\SteveScratch.swf]] --生成的 swf 路径
 local offAdd = [[\src\util\]] -- 相对于 add 的源码 util 路径（存放bin文件）
 local TargetPlatform = arg[6]
 

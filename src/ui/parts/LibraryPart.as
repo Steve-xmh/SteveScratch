@@ -75,7 +75,7 @@ public class LibraryPart extends UIPart {
 		spritesTitle = makeLabel(Translator.map('Sprites'), CSS.titleFormat, app.isMicroworld ? 10: stageAreaWidth + 10, 5);
 		addChild(spritesTitle);
 
-		addChild(newSpriteLabel = makeLabel(Translator.map('New sprite:'), CSS.titleFormat, 10, 5));
+		addChild(newSpriteLabel = makeLabel(Translator.map('New sprite:'), CSS.titleFormat,100, 5));
 		addChild(libraryButton = makeButton(spriteFromLibrary, 'library'));
 		addChild(paintButton = makeButton(paintSprite, 'paintbrush'));
 		addChild(importButton = makeButton(spriteFromComputer, 'import'));
@@ -166,7 +166,7 @@ public class LibraryPart extends UIPart {
 			stageThumbnail.y = CSS.titleBarH + 2;
 			spritesFrame.x = stageAreaWidth + 1;
 
-			newSpriteLabel.x = libraryButton.x - newSpriteLabel.width - 6;
+			newSpriteLabel.x = paintButton.x - newSpriteLabel.width - 3;
 			newSpriteLabel.y = 6;
 		}
 		else {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/31.0">
+<application xmlns="http://ns.adobe.com/air/application/28.0">
   <id>com.SteveXMH.SteveScratch</id>
   <versionNumber>1.0.11</versionNumber>
 <versionLabel>1.0.11</versionLabel>
@@ -13,13 +13,13 @@
   </name>
   <description>
     <text xml:lang="zh">二次开发 Scratch！
-仅在百度贴吧发布！</text>
+仅在百度贴吧和GitHub发布！</text>
     <text xml:lang="zh-Hant">
     </text>
     <text xml:lang="en">
     </text>
   </description>
-  <copyright>二次修改作者：小萧82</copyright>
+  <copyright>二次修改作者：小萧82 、 hdz2007(Sparrow)</copyright>
   <initialWindow>
     <title>SteveScratch</title>
     <content>SteveScratch.swf</content>
