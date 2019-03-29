@@ -1,5 +1,9 @@
 # SteveScratch
 
+[![](https://img.shields.io/github/license/Eureka0225/SteveScratch.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.html)
+![](https://img.shields.io/github/languages/code-size/Eureka0225/SteveScratch.svg?style=flat-square&color=cc9119)
+![](https://img.shields.io/badge/actionscript-3.0-green.svg?style=flat-square)
+
 SteveScratch is a powerful scratch editor secondary development version from LLK/scratch-flash. This projece has many **new** functions.
 
 ## Build
