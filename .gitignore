@@ -1,0 +1,39 @@
+# Build and Release Folders
+bin/
+bin-debug/
+bin-release/
+bin-release-temp/
+[Bb]in/
+[Aa]ir/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.exe
+*.swf
+*.air
+*.ipa
+*.apk
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+.vscode/settings.json
+*.as3proj
+src/util/Order.bin
+src/util/PartChunkAfter.bin
+src/util/PartChunkBefore.bin
+src/util/PartChunkBetween.bin
+src/util/PartHeader.bin
+src/util/PartChunkBetween.bin
+src/util/PartChunkBefore.bin
+src/util/PartChunkAfter.bin
+*.bin
+obj/SteveScratch636793436925322876
+obj/SteveScratch636793438897870910
+obj/pmd.old
+obj/SteveScratchConfig.old
+
+SteveScratch.as3proj
+bat/*

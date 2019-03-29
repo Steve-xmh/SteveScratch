@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/31.0">
+  <id>com.SteveXMH.SteveScratch</id>
+  <versionNumber>1.0.11</versionNumber>
+<versionLabel>1.0.11</versionLabel>
+  <filename>SteveScratch</filename>
+  <name>
+    <text xml:lang="zh">SteveScratch</text>
+    <text xml:lang="zh-Hant">
+    </text>
+    <text xml:lang="en">
+    </text>
+  </name>
+  <description>
+    <text xml:lang="zh">二次开发 Scratch！
+仅在百度贴吧发布！</text>
+    <text xml:lang="zh-Hant">
+    </text>
+    <text xml:lang="en">
+    </text>
+  </description>
+  <copyright>二次修改作者：小萧82</copyright>
+  <initialWindow>
+    <title>SteveScratch</title>
+    <content>SteveScratch.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <minimizable>true</minimizable>
+    <maximizable>true</maximizable>
+    <resizable>true</resizable>
+    <width>1100</width>
+    <height>660</height>
+    <minSize>1100 660</minSize>
+    <renderMode>auto</renderMode>
+    <requestedDisplayResolution>high</requestedDisplayResolution>
+  </initialWindow>
+  <!-- 
+	More options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	-->
+  <supportedProfiles>desktop extendedDesktop mobileDevice tv extendedTV</supportedProfiles>
+  <android>
+    <manifestAdditions><![CDATA[<manifest android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android" />]]></manifestAdditions>
+  </android>
+  <icon>
+    <image16x16>icons/SteveScratch16.png</image16x16>
+    <image29x29>icons/SteveScratch29.png</image29x29>
+    <image32x32>icons/SteveScratch32.png</image32x32>
+    <image48x48>icons/SteveScratch48.png</image48x48>
+    <image128x128>icons/SteveScratch128.png</image128x128>
+  </icon>
+  <allowBrowserInvocation>true</allowBrowserInvocation>
+  <customUpdateUI>true</customUpdateUI>
+</application>
