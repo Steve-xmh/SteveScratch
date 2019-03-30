@@ -446,7 +446,7 @@ package primitives
 			return rOct;
 		}
 		
-		
+
 		private function decToBin(b:Block):*{
 			var dec:* = interp.arg(b, 0);
 			return dec.toString(2);
