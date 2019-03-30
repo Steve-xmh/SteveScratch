@@ -1,4 +1,3 @@
-【警告，本文件属于机密文件，不得向外宣传！】
 SteveScratchEncryptedProject
 ssep加密工程格式结构 v0.0.1 (0号版本号)
 
