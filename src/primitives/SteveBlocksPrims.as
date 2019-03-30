@@ -87,6 +87,9 @@ package primitives
 			primTable["decToBin"] = decToBin;
 			primTable["decToHex"] = decToHex;
 			primTable["decToOct"] = decToOct;
+			primTable["hexToDec"] = hexToDec;
+			primTable["hexToBin"] = hexToBin;
+			primTable["hexToOct"] = hexToOct;
 		}
 		
 		private function ifThenElse(b:Block):* 
@@ -458,6 +461,19 @@ package primitives
 		private function decToOct(b:Block):*{
 			var dec:* = interp.arg(b, 0);
 			return dec.toString(8);
+		}
+		
+		private function hexToDec(b:Block):*{
+			var hex:* = interp.arg(b, 0);
+			return parseInt(hex,16);
+		}
+		private function hexToBin(b:Block):*{
+			var hex:* = interp.arg(b, 0);
+			return parseInt(hex, 16).toString(2);
+		}
+		private function hexToOct(b:Block):*{
+			var hex:* = interp.arg(b, 0);
+			return parseInt(hex, 16).toString(8);
 		}
 		//private function connectCloud(b:Block):*{
 		//	var ip = interp.arg(b,0);
