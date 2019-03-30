@@ -18,7 +18,7 @@ package primitives
 	
 	/**
 	 * SteveScratch 独占模块
-	 * @author SteveXMH
+	 * @author SteveXMH/Saprrow
 	 */
 	public class SteveBlocksPrims
 	{
@@ -84,6 +84,9 @@ package primitives
 			primTable["binToDec"] = binToDec;
 			primTable["binToHex"] = binToHex;
 			primTable["binToOct"] = binToOct;
+			primTable["decToBin"] = decToBin;
+			primTable["decToHex"] = decToHex;
+			primTable["decToOct"] = decToOct;
 		}
 		
 		private function ifThenElse(b:Block):* 
@@ -439,10 +442,23 @@ package primitives
 		private function binToOct(b:Block):*{
 			var Bin:* = interp.arg(b, 0);
 			var rDec:* = parseInt(Bin, 2);
-			var rHex:* = (rDec.toString(8))
-			return rHex;
+			var rOct:* = (rDec.toString(8))
+			return rOct;
 		}
 		
+		
+		private function decToBin(b:Block):*{
+			var dec:* = interp.arg(b, 0);
+			return dec.toString(2);
+		}
+		private function decToHex(b:Block):*{
+			var dec:* = interp.arg(b, 0);
+			return dec.toString(16);
+		}
+		private function decToOct(b:Block):*{
+			var dec:* = interp.arg(b, 0);
+			return dec.toString(8);
+		}
 		//private function connectCloud(b:Block):*{
 		//	var ip = interp.arg(b,0);
 		//	var port = interp.arg(b,1);

@@ -463,6 +463,9 @@ public class Specs {
 		["将二进制的 %s 转换为十进制",					"r", 14, "binToDec",						1, "1010"],
 		["将二进制的 %s 转换为十六进制",					"r", 14, "binToHex",						1, "1010"],
 		["将二进制的 %s 转换为八进制",					"r", 14, "binToOct",						1, "1010"],
+		["将十进制的 %n 转换为二进制",					"r", 14, "decToBin",						1, 1010],
+		["将十进制的 %n 转换为十六进制",					"r", 14, "decToHex",						1, 1010],
+		["将十进制的 %n 转换为八进制",					"r", 14, "decToOct",						1, 1010],
 		
 		["use %c to draw a square on x:%n y:%n width:%n height:%n",	" ", 13, "drawRect",					null,0,0,15,15],
 		
