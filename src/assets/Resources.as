@@ -334,6 +334,7 @@ public class Resources {
 	[Embed(source = 'UI/paint/moreInfoOn.png')] private static const moreInfoOn:Class;
 	
 	//Default Characters
-	//[Embed(source = 'sprite/sprite1.svg')] private static const defaultSprite1:Class;
-	//[Embed(source = 'sprite/sprite2.svg')] private static const defaultSprite2:Class;
+	[Embed(source = 'sprite/1.svg')] private static const defaultSprite1:Class;
+	[Embed(source = 'sprite/2.svg')] private static const defaultSprite2:Class;
+	[Embed(source = 'sprite/3.svg')] private static const defaultSprite3:Class;
 }}

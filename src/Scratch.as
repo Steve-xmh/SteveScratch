@@ -249,10 +249,12 @@ public class Scratch extends Sprite {
 	
 	public static var isLoader:Boolean = false;
 	
-	[Embed(source = "assets/sprite/sprite1.svg", mimeType = "application/octet-stream")]
+	[Embed(source = "assets/sprite/1.svg", mimeType = "application/octet-stream")]
 	private static const sprite1:Class;
-	[Embed(source = "assets/sprite/sprite2.svg", mimeType = "application/octet-stream")]
+	[Embed(source = "assets/sprite/2.svg", mimeType = "application/octet-stream")]
 	private static const sprite2:Class;
+	[Embed(source = "assets/sprite/3.svg", mimeType = "application/octet-stream")]
+	private static const sprite3:Class;
 
 	public var logger:Log = new Log(16);
 
@@ -351,7 +353,7 @@ public class Scratch extends Sprite {
 		jsEnabled = result;
 		initialize();
 	}
-	
+	/*
 	private function checkSSVersion(isManual:Boolean = false):void {
 		//trace(Capabilities.playerType)
 		if (Capabilities.playerType != "Desktop") return;
@@ -435,7 +437,7 @@ public class Scratch extends Sprite {
 		updatePack.load(new URLRequest(encodeURI("http://clip.sparrowhe.cf:1234/ssupd/" + link)));
 	}
 	
-	
+	*/
 
 	protected function initialize():void {
 		//Font.registerFont(FontXMLT);
@@ -492,7 +494,7 @@ public class Scratch extends Sprite {
 		server.getSelectedLang(Translator.setLanguageValue);
 		//翻译文件加载完毕
 		
-		checkSSVersion();
+		//checkSSVersion();
 		
 		
 		if (!isLoader) converter = new ScConverter();
@@ -1504,7 +1506,7 @@ public class Scratch extends Sprite {
 		//m.addItem('Open developer logs window', openDevLogsWindow);
 		//m.addLine();
 		m.addItem('About', showAboutDialog);
-		m.addItem("Check for updates", function():void{checkSSVersion(true)});
+		//m.addItem("Check for updates", function():void{checkSSVersion(true)});
 		//var p:Point = b.localToGlobal(new Point(0, 0));
 		m.showOnStage(stage, b.x, topBarPart.bottom() - 1);
 	}
@@ -1549,8 +1551,8 @@ public class Scratch extends Sprite {
 	}
 	
 	protected function onNewProject():void {
-		var cat1:ScratchSprite = new ScratchSprite(Translator.map('costume1'));
-		var catSvg:Array = [new ScratchCostume("Cat1",new sprite1() as ByteArray), new ScratchCostume("Cat2",new sprite2() as ByteArray)];
+		var cat1:ScratchSprite = new ScratchSprite(Translator.map('SteveXMH'));
+		var catSvg:Array = [new ScratchCostume("SteveXMH1",new sprite1() as ByteArray), new ScratchCostume("SteveXMH2",new sprite2() as ByteArray), new ScratchCostume("SteveXMH3",new sprite3() as ByteArray)];
 		cat1.costumes = catSvg;
 		addNewSprite(cat1);
 		cat1.setScratchXY(0, 0);

@@ -19,7 +19,7 @@ local libPath = [["]]..arg[4]..[[\libs\"]]
 local buildProject = [["]]..arg[4]..[[\src\Loader\SB2Loader.as"]]
 
 local configPath = [["]]..arg[4]..[[\obj\SteveScratchConfig.xml"]]
-local title = [[ -title="SteveScratch 1.0.12"]]
+local title = [[ -title="SteveScratch 1.0.13"]]
 local compilerRun = [[\bin\mxmlc.bat]]
 os.execute("cls")
 print("\n\tBuilding SteveScratchLoader...\n")
